@@ -1,0 +1,19 @@
+{
+  "name": "Battlesip_temp",
+  "version": "0.0.1",
+  "description": "Battleship_temp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephania07/Battleship_temp.git"
+  },
+  "author": "Stephania07, Brandon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephania07/Battleship_temp/issues"
+  },
+  "homepage": "https://github.com/stephania07/Battleship_temp"
+}

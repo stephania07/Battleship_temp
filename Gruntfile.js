@@ -89,7 +89,7 @@ module.exports = function(grunt){
     },
   });
 
-  grunt.registerTask('serve', ['sass:serve', 'jekyll:serve', 'connect:livereload', 'watch']);
+  grunt.registerTask('serve', ['sass:serve', 'connect:livereload', 'watch']);
   grunt.registerTask('check', ['jekyll:check', 'jshint:all']);
 
 };

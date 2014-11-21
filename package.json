@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/stephania07/Battleship_temp/issues"
   },
-  "homepage": "https://github.com/stephania07/Battleship_temp"
+  "homepage": "https://github.com/stephania07/Battleship_temp",
+  "devDependencies": {
+    "bower": "^1.3.12"
+  }
 }

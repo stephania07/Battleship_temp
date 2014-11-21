@@ -2,7 +2,8 @@
   "name": "Battleship_temp",
   "version": "0.0.1",
   "homepage": "https://github.com/stephania07/Battleship_temp",
-  "authors": [ "Stephania",
+  "authors": [
+    "Stephania",
     "Brandon"
   ],
   "description": "Battleship_temp",
@@ -14,5 +15,13 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "lodash": "~2.4.1",
+    "bootstrap": "~3.3.1",
+    "mocha": "~2.0.1",
+    "chai": "~1.10.0",
+    "normalize-scss": "~3.0.2"
+  }
 }

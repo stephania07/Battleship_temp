@@ -1,3 +1,5 @@
+var currentShip;
+
 $('#aircraft').draggable({
     containment: "#board1",
     grid: [10,10],
@@ -5,7 +7,8 @@ $('#aircraft').draggable({
     stop: function() {
         var offset = $(this).offset();
         console.log("Top: " + offset.top + " Left: " + offset.left);
-    }
+        currentShip = $(this);
+		}
 });
 
 $('#battleship').draggable({
@@ -15,7 +18,8 @@ $('#battleship').draggable({
     stop: function() {
         var offset = $(this).offset();
         console.log("Top: " + offset.top + " Left: " + offset.left);
-    }
+        currentShip = $(this);
+		}
 });
 
 $('#cruiser').draggable({
@@ -25,6 +29,7 @@ $('#cruiser').draggable({
     stop: function() {
         var offset = $(this).offset();
         console.log("Top: " + offset.top + " Left: " + offset.left);
+        currentShip = $(this);
     }
 });
 
@@ -35,6 +40,7 @@ $('#patrolboat').draggable({
     stop: function() {
         var offset = $(this).offset();
         console.log("Top: " + offset.top + " Left: " + offset.left);
+        currentShip = $(this);
     }
 });
 
@@ -45,33 +51,33 @@ $('#submarine').draggable({
     stop: function() {
         var offset = $(this).offset();
         console.log("Top: " + offset.top + " Left: " + offset.left);
+        currentShip = $(this);
     }
 });
-/*var value = 0;
-$('#button').click(function(){
-  $('#aircraft').rotate({
-    bind: {
-      click: function(){ 
-      value += 90;
-      $(this).rotate({animateTo:value})
-    }}
-  })
-});
-*/
-//var angle = 0;
-/*$(document).ready(function() {
-    $("#button").click(function() {
-      //angle += 90;
-      $('#aircraft').rotate(90);
-    });
-});
-/*var angle = 0;
+
+var angle = 0;
 $('#button').on('click', function() {
-	angle += 90;
-	angle += 120;
-  var $target = $('#aircraft');
-	 $target.rotate(angle);
+ 	angle += 90;
+  var $target = currentShip;
+    $target.css('transform', 'rotate(' + angle +  'deg)'); 
 });
+
+$('#aircraft').click(function(){
+  currentShip = $(this);
+});
+$('#battleship').click(function(){
+  currentShip = $(this);
+});
+$('#cruiser').click(function(){
+  currentShip = $(this);
+});
+$('#patrolboat').click(function(){
+  currentShip = $(this);
+});
+$('#submarine').click(function(){
+  currentShip = $(this);
+});
+
 
 //Basic function
 

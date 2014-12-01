@@ -1,103 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Battleship</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="bower_components/mocha/mocha.css">
-</head>
-<body>
-  <h1>Battleship-Game</h1>
-  <table id="board1">
-    <thead>
-      <tr>
-        <th></th>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-        <th>6</th>
-        <th>7</th>
-        <th>8</th>
-        <th>9</th>
-        <th>10</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <th>A</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>B</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>C</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>D</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>E</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>F</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>G</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>H</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>I</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr>
-        <th>J</th>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        </tr>
-    </tbody>
-  </table>
-    <button id="button">Rotate</button>
-
-<ul class='ship'>
-  <li><img src="images/aircraftcarrier1.jpg" id="aircraft"></li>
-  <li><img src="images/Battleship.png" id="battleship"></li>
-  <li><img src="images/Cruiser.png" id="cruiser" ></li>
-  <li><img src="images/PatrolBoat.png" id="patrolboat"></li>
-  <li><img src="images/Submarine.png" id="submarine"></li>
-</ul>
-<!--
-<table class="player2">
-<thead>
-        <tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>
-</thead>
-<tbody>
-        <tr><th>A</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>B</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>C</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>D</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>E</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>F</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>G</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>H</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>I</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        <tr><th>J</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</tbody>
-</table>-->
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<script src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
-<script src="main.js"></script>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/lodash/dist/lodash.js"></script>
-</body>
+ <html>
+  <head>
+     <title>Battleship</title>
+     <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+     <h1>Battleship-Game</h1>
+     <table id="board1">
+     </table>
+     <div id='ship'>
+       <div class='piece' id='aircraft'></div>
+       <div class='piece' id='battleship'></div>
+       <div class='piece' id='destroyer'></div>
+       <div class='piece' id='patrolboat'></div>
+       <div class='piece' id='submarine'></div>
+     </div>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/lodash/dist/lodash.js"></script>
+  </body>
 </html>
+

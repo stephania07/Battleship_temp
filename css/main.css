@@ -3,28 +3,37 @@ h1 {
   text-align: center;
 }
 
-table td, table tr {
-  height: 35px;
-  width: 35px;
-  background-color: lightblue;
-  
-}
-
-table tr th {
-  background-color: mintcream;
-}
-
 table {
   height: 300px;
-  border: solid black;
-  float: left;
-  margin: 15px;
-  padding: 0;
+  width: 300px;
+  background-color: lightblue;
   background-image: url(../images/ocean.jpg);
 }
 
-ul li {
-	list-style: none;
+#board1 tr td{
+  height: 24px;
+  width: 24px;
+  border: 1px solid black;
 }
 
+.piece {
+  height: 25px;
+  background-color: black;
+  margin: 2px;
+ }
 
+#aircraft {
+  width: 140px;
+}
+
+#battleship {
+  width: 112px;
+}
+
+#destroyer, #submarine {
+  width: 84px;
+}
+
+#patrolboat {
+  width:  56px;
+}
